@@ -1,0 +1,32 @@
+Requested prime size: 16 bits
+Modulus: generated using library prime generator
+Modulus bit length: 16
+Received modulus library validation: PASS
+Alice initiation signature: VALID
+Bob response signature: VALID
+Alice finish signature: VALID
+Generator: validated
+Transcript authenticated: YES
+Shared-secret equality in local test: PASS
+Explicit key confirmation: NOT IMPLEMENTED
+[classroom debug only] secret = 60420
+
+Eve vs unauthenticated DH (p=23, g=5)
+{'E1': 10, 'E2': 17, 'alice': 6, 'bob': 15, 'eve_matches': True} Alice and Bob differ; Eve knows both
+
+Eve vs authenticated DH
+Eve modified Bob's public value.
+Bob response signature: INVALID
+Exchange aborted. (signature INVALID)
+
+Performance
+| Bits | Trial | Prime generation (s) | Factorization (s) | Generator search (s) | Authenticated | Secrets match |
+| 16 | 1 | 0.000220 | 0.000003 | 0.000026 | Yes | Yes |
+| 16 | 2 | 0.000138 | 0.000003 | 0.000009 | Yes | Yes |
+| 16 | 3 | 0.000247 | 0.000003 | 0.000014 | Yes | Yes |
+| 24 | 1 | 0.000448 | 0.000021 | 0.000026 | Yes | Yes |
+| 24 | 2 | 0.000387 | 0.000023 | 0.000020 | Yes | Yes |
+| 24 | 3 | 0.000397 | 0.000012 | 0.000011 | Yes | Yes |
+| 32 | 1 | 0.000602 | 0.000025 | 0.000042 | Yes | Yes |
+| 32 | 2 | 0.000664 | 0.000005 | 0.000032 | Yes | Yes |
+| 32 | 3 | 0.000479 | 0.000371 | 0.000032 | Yes | Yes |
